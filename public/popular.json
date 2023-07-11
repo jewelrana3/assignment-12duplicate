@@ -1,0 +1,104 @@
+ [
+    {
+      "id": 1,
+      "name": "Introduction to Programming",
+      "category": "Science",
+      "image": "https://i.ibb.co/hsbJvmX/jafar-ahmed-E285p-Jb-C4u-E-unsplash.jpg",
+      "student": "John Doe",
+      "amount": 50,
+      "instructor": "Jane Smith",
+      "email": "john.doe@example.com",
+      "availableSeats": 10
+    },
+    {
+      "id": 2,
+      "name": "Data Structures and Algorithms",
+      "category": "Science",
+      "image": "https://i.ibb.co/87Rykdh/francisco-venancio-M4-Xloxsg0-Gw-unsplash.jpg",
+      "student": "Alice Johnson",
+      "amount": 75,
+      "instructor": "Robert Davis",
+      "email": "alice.johnson@example.com",
+      "availableSeats": 5
+    },
+    {
+      "id": 3,
+      "name": "English Literature",
+      "category": "Literature",
+      "image": "english_literature.jpg",
+      "student": "Emily Thompson",
+      "amount": 60,
+      "instructor": "Michael Wilson",
+      "email": "emily.thompson@example.com",
+      "availableSeats": 3
+    },
+    {
+      "id": 4,
+      "name": "Introduction to Economics",
+      "category": "Social Sciences",
+      "image": "intro_economics.jpg",
+      "student": "David Brown",
+      "amount": 45,
+      "instructor": "Laura Adams",
+      "email": "david.brown@example.com",
+      "availableSeats": 8
+    },
+    {
+      "id": 5,
+      "name": "Introduction to Psychology",
+      "category": "Social Sciences",
+      "image": "intro_psychology.jpg",
+      "student": "Sophia Anderson",
+      "amount": 55,
+      "instructor": "Daniel Miller",
+      "email": "sophia.anderson@example.com",
+      "availableSeats": 2
+    },
+    {
+      "id": 6,
+      "name": "Art History",
+      "category": "Arts",
+      "image": "art_history.jpg",
+      "student": "Olivia Wilson",
+      "amount": 70,
+      "instructor": "William Thompson",
+      "email": "olivia.wilson@example.com",
+      "availableSeats": 4
+    },
+    {
+      "id": 7,
+      "name": "Digital Marketing",
+      "category": "Business",
+      "image": "digital_marketing.jpg",
+      "student": "Ethan Davis",
+      "amount": 90,
+      "instructor": "Emma Johnson",
+      "email": "ethan.davis@example.com",
+      "availableSeats": 6
+    },
+    {
+      "id": 8,
+      "name": "Introduction to Chemistry",
+      "category": "Science",
+      "image": "https://i.ibb.co/5v61PWH/piron-guillaume-y5h-QCIn1c6o-unsplash.jpg",
+      "student": "Ava Martinez",
+      "amount": 65,
+      "instructor": "Liam Anderson",
+      "email": "ava.martinez@example.com",
+      "availableSeats": 7
+    },
+    {
+      "id": 9,
+      "name": "Music Theory",
+      "category": "Music",
+      "image": "music_theory.jpg",
+      "student": "Noah Garcia",
+      "amount": 80,
+      "instructor": "Sophia Wilson",
+      "email": "noah.garcia@example.com",
+      "availableSeats": 1
+    }
+  ]
+  
+
+  
