@@ -1,19 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../provider/AuthProvider';
+import useSelect from '../../../hooks/useSelect';
 
 const Navber = () => {
+    const {user,logOut} = useContext(AuthContext)
+    const [,select] = useSelect();
+
+    const handleLogOut = () =>{
+        logOut()
+        .then(()=>{})
+        .catch((err)=> console.log(err))
+    }
 
     const navItem = <>
         <div className='flex'>
-            <li><Link>Home</Link></li>
-            <li><Link>Instructor</Link></li>
-            <li><Link>Popular</Link></li>
-            <li><Link>Dashboard</Link></li>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/instructor'>Instructor</Link></li>
+            <li><Link to='/popular'>Popular</Link></li>
+            <li><Link to='/dashboard'>Dashboard {select.length || 0}</Link></li>
         </div>
     
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-neutral-900 text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -31,7 +41,9 @@ const Navber = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Log Out</a>
+                {
+                    user ? <button className='bg-fuchsia-950 py-2 px-3 text-white font-semibold rounded' onClick={handleLogOut}>Log Out</button>  : <button className='bg-cyan-500 rounded py-2 px-3 text-white font-semibold'><Link to='/login'>Login</Link></button>
+                }
             </div>
         </div>
     );

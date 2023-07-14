@@ -1,22 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import useInstructor from '../../../../hooks/useInstructor';
 
 const Instructor = () => {
-    const [instructor,setInstructor] = useState([])
-    useEffect(() => {
-        fetch('instructor.json')
-            .then(res => res.json())
-            .then(data => {
-               
-                setInstructor(data)
-            })
-    }, [])
-
+   const [instructor] = useInstructor();
     return (
         <div className='mb-12'>
-            <h2 className='text-center font-bold text-2xl mt-12 mb-10'>Popular Class</h2>
+            <h2 className='text-center font-bold text-2xl mt-12 mb-10'>Instructor Class</h2>
             <div className="grid grid-cols-1 sm:grid-flow-row md:grid-cols-2 lg:grid-cols-3 gap-16">
                 {
-                    instructor.slice(0,6).map(item => <div key={item._id} style={{ width: '22rem' }} className="card card-compact w-96 bg-base-100 shadow-xl">
+                    instructor.slice(0,3).map(item => <div key={item._id} style={{ width: '22rem' }} className="card card-compact w-96 bg-base-100 shadow-xl">
                         <figure><img src={item.image} alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title"> {item.name}</h2>
